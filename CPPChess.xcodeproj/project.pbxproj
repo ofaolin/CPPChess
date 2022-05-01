@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		4F1512E927C4793000387AFD /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4F1512E827C4793000387AFD /* main.cpp */; };
+		4F3F33CD2800728D00AE92DE /* chessGame.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4F3F33CC2800728D00AE92DE /* chessGame.cpp */; };
+		4F3F33CF2800755700AE92DE /* Piece.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4F3F33CE2800755700AE92DE /* Piece.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,7 +27,9 @@
 /* Begin PBXFileReference section */
 		4F1512E527C4793000387AFD /* CPPChess */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CPPChess; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F1512E827C4793000387AFD /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		4F1512F027C479E700387AFD /* Pieces.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Pieces.h; sourceTree = "<group>"; };
+		4F1512F027C479E700387AFD /* chessGame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = chessGame.h; sourceTree = "<group>"; };
+		4F3F33CC2800728D00AE92DE /* chessGame.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = chessGame.cpp; sourceTree = "<group>"; };
+		4F3F33CE2800755700AE92DE /* Piece.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Piece.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +63,9 @@
 			isa = PBXGroup;
 			children = (
 				4F1512E827C4793000387AFD /* main.cpp */,
-				4F1512F027C479E700387AFD /* Pieces.h */,
+				4F3F33CC2800728D00AE92DE /* chessGame.cpp */,
+				4F3F33CE2800755700AE92DE /* Piece.cpp */,
+				4F1512F027C479E700387AFD /* chessGame.h */,
 			);
 			path = CPPChess;
 			sourceTree = "<group>";
@@ -91,7 +97,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastUpgradeCheck = 1320;
+				LastUpgradeCheck = 1330;
 				TargetAttributes = {
 					4F1512E427C4793000387AFD = {
 						CreatedOnToolsVersion = 13.2.1;
@@ -121,6 +127,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F3F33CF2800755700AE92DE /* Piece.cpp in Sources */,
+				4F3F33CD2800728D00AE92DE /* chessGame.cpp in Sources */,
 				4F1512E927C4793000387AFD /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -242,6 +250,7 @@
 		4F1512ED27C4793000387AFD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -250,6 +259,7 @@
 		4F1512EE27C4793000387AFD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
