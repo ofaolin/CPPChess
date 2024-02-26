@@ -181,7 +181,7 @@ void chessGame::displayTitle(){
     cout <<" ██║     ██╔══██║██╔══╝  ╚════██║╚════██║" << endl;
     cout <<" ╚██████╗██║  ██║███████╗███████║███████║" << endl;
     cout <<"  ╚═════╝╚═╝  ╚═╝╚══════╝╚══════╝╚══════╝" << endl;
-    cout << "                      By: Tyler Phalen" << endl;
+    cout << "                      By: O'Faolin" << endl;
     cout << endl;
 }
 void chessGame::displayPiece(coordinates XY){
