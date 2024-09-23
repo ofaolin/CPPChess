@@ -3,7 +3,9 @@
 //  CPPChess
 //
 //  Created by Tyler Phalen on 2/21/22.
-//
+// 
+//  build with clang: clang++ -std=c++11 main.cpp chessGame.cpp Piece.cpp -o chessGame
+
 
 /* READ ME
  
