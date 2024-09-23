@@ -94,7 +94,7 @@ chessGame::chessGame(){
                             break;
                     }
                     break;
-                    
+
                 default:
                     break;
             }
@@ -181,7 +181,7 @@ void chessGame::displayTitle(){
     cout <<" ██║     ██╔══██║██╔══╝  ╚════██║╚════██║" << endl;
     cout <<" ╚██████╗██║  ██║███████╗███████║███████║" << endl;
     cout <<"  ╚═════╝╚═╝  ╚═╝╚══════╝╚══════╝╚══════╝" << endl;
-    cout << "                      By: O'Faolin" << endl;
+    cout << "                      By: Tyler Phalen, Built in C++" << endl;
     cout << endl;
 }
 void chessGame::displayPiece(coordinates XY){
@@ -305,9 +305,9 @@ bool chessGame::validateMove(chessPiece selectedPiece, chessPiece destPiece){
             y++;
         } while ((x <= destPiece.XY.x) && (y <= destPiece.XY.y));
     }
-    
+
     //to ensure that the square you are going to is not occupied by a piece on your own team
-    
+
     if (selectedPiece.pieceColor != destPiece.pieceColor){
         valid = true;
     }
